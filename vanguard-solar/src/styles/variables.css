@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --color-primary: #FDB813; /* Solar Gold */
+  --color-secondary: #003366; /* Deep Cobalt */
+  --color-accent: #228B22; /* Sustainable Green */
+  --color-bg-dark: #0A0A0A;
+  --color-bg-card: #1A1A1A;
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #A0A0A0;
+  
+  /* Gradints */
+  --gradient-gold: linear-gradient(135deg, #FDB813 0%, #FFA500 100%);
+  --gradient-cobalt: linear-gradient(135deg, #003366 0%, #001A33 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-padding: 80px 5%;
+  --border-radius: 12px;
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-heading);
+  transition: var(--transition-smooth);
+}
+
+.glass {
+  background: var(--gradient-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
